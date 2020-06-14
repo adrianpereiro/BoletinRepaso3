@@ -76,7 +76,7 @@ public class Main {
 
 					LocalDate fechaNacimiento = LocalDate.of(año, mes, dia);
 
-					Cliente nuevoCliente = new Cliente(nombreCliente, DNI, fechaNacimiento, edad);
+					Cliente nuevoCliente = new Cliente(nombreCliente, DNI, fechaNacimiento);
 
 					if (edad >= 16 && edad <= 18) {
 						adolescente.add(nuevoCliente);

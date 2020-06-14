@@ -5,21 +5,13 @@ public class Cliente {
 	private String DNI;
 	private String nombre;
 	private LocalDate fechaNacimiento;
-	private float edad;
-	private String edad2;
+
 
 	
-	public Cliente (String nombre, String DNI, LocalDate fechaNacimiento, float edad ) {
+	public Cliente (String nombre, String DNI, LocalDate fechaNacimiento) {
 		this.nombre = nombre;
 		this.DNI = DNI;
 		this.fechaNacimiento = fechaNacimiento; 
-		this.edad = edad;
-	}
-	public Cliente (String nombre, String DNI, LocalDate fechaNacimiento, String edad2 ) {
-		this.nombre = nombre;
-		this.DNI = DNI;
-		this.fechaNacimiento = fechaNacimiento; 
-		this.setEdad2(edad2);
 	}
 	
 	public static long devolverEdad(int dia, int mes, int año) {
@@ -55,22 +47,6 @@ public class Cliente {
 
 	public void setFechaNacimiento(LocalDate fechaNacimiento) {
 		this.fechaNacimiento = fechaNacimiento;
-	}
-	
-	public float getEdad() {
-		return edad;
-	}
-	
-	public void setEdad(long edad) {
-		this.edad = edad;
-	}
-	
-	public String getEdad2() {
-		return edad2;
-	}
-	
-	public void setEdad2(String edad2) {
-		this.edad2 = edad2;
 	}
 	
 	@Override
